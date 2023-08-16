@@ -1,0 +1,52 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffb715;
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+}
+
+/* Monument Page Styles */
+.monument-details {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.monument-image img {
+    max-width: 100%; /* Adjust image size */
+    height: auto;
+    max-height: 400px; /* Limit image height */
+}
+
+.monument-description {
+    padding: 1rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .monument-details {
+        flex-direction: column;
+    }
+
+    .monument-image img {
+        max-height: 300px; /* Adjust image height for smaller screens */
+    }
+}
+
+/* Video Container Styles */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    margin-top: 2rem; /* Add some spacing between text and video */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

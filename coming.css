@@ -1,0 +1,31 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffb715;
+    margin: 0;
+    padding: 0;
+}
+
+/* Coming Soon Page Styles */
+.coming-soon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.content {
+    max-width: 600px;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .content {
+        padding: 1rem;
+    }
+}

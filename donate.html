@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donate</title>
+    <link rel="stylesheet" type="text/css" href="donate.css">
+</head>
+<body>
+    <header>
+        <h1>Donate</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore Sites</a></li>
+            <li><a href="comingsoon.html">Guided Tours</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
+    </nav>
+    <main class="donate">
+        <section class="content">
+            <h2>Support Our Cause</h2>
+            <p>Your contribution helps us continue providing virtual pilgrimage experiences to people around the world. Your donation supports maintenance, content creation, and technological advancements.</p>
+            <p>Thank you for being a part of our journey and helping us bring the spiritual experience to everyone.</p>
+            <form action="https://payment-gateway.com/process" method="post">
+                <label for="amount">Donation Amount:</label>
+                <input type="number" id="amount" name="amount" min="1" step="1" required>
+                <input type="hidden" name="currency" value="USD">
+                <input type="hidden" name="description" value="Virtual Pilgrimage Donation">
+                <input type="hidden" name="merchant_id" value="YOUR_MERCHANT_ID">
+                <input type="hidden" name="secret_key" value="YOUR_SECRET_KEY">
+                <button type="submit" class="cta-button">Donate Now</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Moksh</p>
+    </footer>
+</body>
+</html>
